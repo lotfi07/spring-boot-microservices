@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  level-servie:
+    build:
+      context: level-service
+      dockerfile: Dockerfile
+    restart: on-failure
+    container_name: level-service
+    image: level-service:0.0.2
