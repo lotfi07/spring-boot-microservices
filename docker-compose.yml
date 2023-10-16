@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     restart: on-failure
     container_name: level-service
-    image: level-service:0.1.3
+    image: level-service:0.2.3
