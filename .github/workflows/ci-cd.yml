@@ -10,9 +10,11 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "release" ]
+    branches: 
+     - release
   pull_request:
-    branches: [ "release" ]
+    branches: 
+     - release
 env:
   REGISTRY: docker.io
   REPO_OWNER: ${{ github.repository_owner }}
