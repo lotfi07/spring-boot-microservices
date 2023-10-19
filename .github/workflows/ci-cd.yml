@@ -52,6 +52,6 @@ jobs:
     - name: Build and push ${{ matrix.image_name }}
       uses: docker/build-push-action@v4
       with:
-        context: ${{ matrix.image_name }}
+        working-directory: ${{ matrix.image_name }}
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/my-image:${{ github.sha }}
