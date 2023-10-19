@@ -5,7 +5,7 @@ FROM openjdk:17-alpine
 WORKDIR /app
 
 #copy the jar file to the container
-COPY *.jar /app/app.jar
+COPY target/*.jar /app/app.jar
 
 #expose port for the application
 EXPOSE 8082
