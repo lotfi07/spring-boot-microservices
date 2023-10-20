@@ -54,5 +54,5 @@ jobs:
       with:
         context: ${{ matrix.image_name }}
         dockerfile: Dockerfile
-        push: true
+        push: false
         tags: ${{ secrets.DOCKER_USERNAME }}/my-image:${{ github.sha }}
